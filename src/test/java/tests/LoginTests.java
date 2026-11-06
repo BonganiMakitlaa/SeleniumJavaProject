@@ -21,6 +21,8 @@ public class LoginTests extends Base {
         loginPage.enterPassword(readData.password);
         loginPage.clickLoginSubmitButton();
         landingPage.verifyLoginSuccess();
+        landingPage.clickLearnDropDown();
+        landingPage.clickLearningMaterials();
 
 
 
