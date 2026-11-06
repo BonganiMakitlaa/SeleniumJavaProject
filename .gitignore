@@ -3,7 +3,10 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 .kotlin
-./idea/
+.idea/
+src/test/java/testData/~$TestData.xlsx
+src/test/java/testData/TestData.xlsx
+
 
 ### IntelliJ IDEA ###
 .idea/modules.xml

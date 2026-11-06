@@ -7,24 +7,26 @@ import pages.LoginPage;
 import utils.BrowserFactory;
 import utils.ReadData;
 
+
 public class Base {
 
     BrowserFactory browserFactory = new BrowserFactory();
 
-    final WebDriver driver = browserFactory.startBrowser("Chrome", "https://ndosisimplifiedautomation.vercel.app/");
+    final WebDriver driver = browserFactory.startBrowser("Edge", "https://ndosisimplifiedautomation.vercel.app/");
     public HomePage homepage = PageFactory.initElements(driver, HomePage.class);
     public LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
     public LandingPage landingPage = PageFactory.initElements(driver, LandingPage.class);
 
-    ReadData readData;
 
-    {
+
+
+    public ReadData readData;
+
+    public Base() {
         try {
             readData = new ReadData();
         } catch (Exception e) {
-            throw new RuntimeException("Failed to initialize ReadData", e);
+            throw new RuntimeException("Failed to load test data from Excel", e);
         }
-
     }
-
 }
