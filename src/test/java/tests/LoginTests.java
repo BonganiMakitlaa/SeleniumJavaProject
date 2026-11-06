@@ -23,11 +23,23 @@ public class LoginTests extends Base {
         landingPage.verifyLoginSuccess();
         landingPage.clickLearnDropDown();
         landingPage.clickLearningMaterials();
-
-
-
-
-
+        learningMaterialPage.clickWebAutomationAdvanceOption();
+        learningMaterialPage.selectDeviceTypeDropDown();
+        learningMaterialPage.selectPhoneOption();
+        learningMaterialPage.selectBrandDropDown();
+        learningMaterialPage.selectAppleOption();
+        learningMaterialPage.select128GBOption();
+        learningMaterialPage.selectColorDropDown();
+        learningMaterialPage.selectBlackOption();
+        learningMaterialPage.clickQuantityInput();
+        learningMaterialPage.clickAddressInput();
+        learningMaterialPage.clickNextButton();
+        learningMaterialPage.clickExpressShippingOption();
+        learningMaterialPage.clickWarranty1YearOption();
+        learningMaterialPage.enterDiscountCode("SAVE10");
+        learningMaterialPage.clickApplyDiscountButton();
+        learningMaterialPage.clickConfirmPurchaseButton();
+        learningMaterialPage.clickViewInvoiceButton();
 
 
 
