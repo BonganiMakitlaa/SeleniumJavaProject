@@ -20,6 +20,7 @@ public class LoginTests extends Base {
         loginPage.enterUsername(readData.username);
         loginPage.enterPassword(readData.password);
         loginPage.clickLoginSubmitButton();
+        landingPage.verifyLoginSuccess();
 
 
 
